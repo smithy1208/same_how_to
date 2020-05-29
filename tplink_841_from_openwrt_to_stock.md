@@ -23,11 +23,12 @@ root / no_password
 ## Венуть на сток!
 
 Вернуть с 19.ХХ.Y релиза не получилось.
-Поэтому перешиваем с sysupgrade на 18.06.7
+
+Поэтому перешить с sysupgrade на 18.06.7
 
 `sysupgrade -v /tmp/openwrt-18.06.7-ramips-mt76x8-tl-wr841n-v13-squashfs-sysupgrade.bin`
 
-От стоковой прошивки нужно отрезать boot. [Скачать tplink.bin](https://github.com/smithy1208/same_how_to/raw/master/tplink.bin)
+От стоковой прошивки нужно отрезать boot. [Скачать готовый tplink_no_boot.bin](https://github.com/smithy1208/same_how_to/raw/master/tplink.bin)
 
 `dd if=orig.bin of=tplink.bin skip=257 bs=512`
 
